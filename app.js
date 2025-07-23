@@ -49,6 +49,10 @@ app.use("/size", (req, res) => {
 app.use("/id", (req, res) => {
     const k1 = ReadFunc();
 
+    for (const value of k1.values()) {
+        console.log(value); // Prints: 10, 20, 30
+    };
+
     res.end(k1.size.toString());
 });
 

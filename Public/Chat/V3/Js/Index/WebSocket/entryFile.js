@@ -15,10 +15,7 @@ let StartFunc = () => {
 };
 
 let jFLocalEstablishWebSocket = () => {
-    
-    let webSocket = new WebSocket(jVarLocalUrlForWS);
-    
-    
+    webSocket = new WebSocket(jVarLocalUrlForWS);
 
     webSocket.onopen = onOpen
     webSocket.onmessage = onMessage;
